@@ -1,7 +1,3 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
-
 CREATE TABLE Student(
     StudentID INT(5) PRIMARY KEY,
     StudentName VARCHAR(20) NOT NULL,
@@ -10,10 +6,5 @@ CREATE TABLE Student(
     DepartmentID INT(5)
 );
 
--- Alter Student table
-
--- Add Email
-
--- Add PhoneNumber
-
--- Display structure
+ALTER table Student add (Email varchar(30),PhoneNumber int(10));
+desc Student;
